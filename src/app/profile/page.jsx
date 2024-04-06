@@ -1,6 +1,9 @@
 "use client"
 import axios from "axios";
 import { useRouter } from "next/navigation";
+import Navbar from "../components/Shared/Navbar";
+import Footer from "../components/Shared/Footer";
+import Banner from "../components/Shared/Banner";
 
 const Profile = () => {
     const router = useRouter();
@@ -14,6 +17,14 @@ const Profile = () => {
     }
 
     return (
+       <div>
+        <div>
+            <Navbar></Navbar>
+            
+            <Banner></Banner>
+        </div>
+
+        <div>
         <div className="min-h-screen bg-gray-100 flex flex-col justify-center items-center">
             <div className="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4">
                 <h1 className="text-3xl mb-4 text-center">Welcome to the Home Page</h1>
@@ -26,6 +37,13 @@ const Profile = () => {
                 </button>
             </div>
         </div>
+        </div>
+
+
+        <div>
+            <Footer></Footer>
+        </div>
+       </div>
     );
 }
 

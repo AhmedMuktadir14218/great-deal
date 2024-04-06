@@ -42,9 +42,10 @@ const Login = () => {
                 <h1 className="text-3xl mb-4 text-center">Login</h1>
                 <form className="space-y-4">
                     <Input
-                        label="username"
+                        label="Phone"
                         id="username"
                         type="text"
+                        placeholder="01XXXXXXXXX"
                         value={data.username}
                         onChange={onValueChange}
                     />
